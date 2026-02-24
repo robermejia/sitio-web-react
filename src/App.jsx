@@ -61,7 +61,7 @@ function App() {
                 <img 
                   id="logo-imagen" 
                   className={theme === 'dark' ? 'logotipo-light' : 'logotipo-dark'} 
-                  src={theme === 'dark' ? '/src/assets/img/logos/logo-light.png' : '/src/assets/img/logos/logo-dark.png'} 
+                  src={theme === 'dark' ? '/img/logos/logo-light.png' : '/img/logos/logo-dark.png'} 
                   alt="LOGO" 
                 />
               </a>
@@ -129,7 +129,7 @@ function App() {
 
       {/* AUDIO */}
       <audio id="bg-music" loop>
-        <source src="/src/assets/audio/El_Campeón_del_Código.mp3" type="audio/mpeg" />
+        <source src="/audio/El_Campeón_del_Código.mp3" type="audio/mpeg" />
       </audio>
     </div>
   );
