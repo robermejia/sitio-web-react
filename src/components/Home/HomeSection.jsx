@@ -31,7 +31,7 @@ const HomeSection = () => {
           </div>
           <div className="home-img">
             <div className="img-box inner-shadow">
-              <img src="/src/assets/img/retratos/foto10.png" className="outer-shadow" alt="profile-pic" />
+              <img src="/img/retratos/foto10.png" className="outer-shadow" alt="profile-pic" />
             </div>
           </div>
         </div>

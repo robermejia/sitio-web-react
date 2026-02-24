@@ -190,24 +190,24 @@ const AboutSection = () => {
               <div className="row">
                 <div className="timeline">
                   <div className="row">
-                    <CertificationItem date="Octubre 2025" title="Certificado de React" img="/src/assets/img/certificaciones/React.png" />
-                    <CertificationItem date="Setiembre 2025" title="Certificado de Angular" img="/src/assets/img/certificaciones/Angular.png" />
-                    <CertificationItem date="Junio 2025" title="Certificado de Defensa de la Red" img="/src/assets/img/certificaciones/network_defense.png" />
-                    <CertificationItem date="Abril 2025" title="Certificado de Introducción a la Ciberseguridad" img="/src/assets/img/certificaciones/intruction_to_cibersecurity.png" />
-                    <CertificationItem date="Abril 2025" title="Certificado de Practicante de Design Thinking Empresarial" img="/src/assets/img/certificaciones/enterprise_design_thinking_practitioner.png" />
-                    <CertificationItem date="Mayo 2025" title="Certificado de Cocreador del pensamiento de diseño empresarial" img="/src/assets/img/certificaciones/enterprise_design_thinking_co_creator.png" />
-                    <CertificationItem date="Diciembre 2024" title="Certificado de CCNA: Introducción a las redes" img="/src/assets/img/certificaciones/ccna_intruction_to_networks.png" />
-                    <CertificationItem date="Octubre 2024" title="Certificado de MySQL" img="/src/assets/img/certificaciones/MySQL.png" />
-                    <CertificationItem date="Abril 2024" title="Certificado de Asistente de docencia" img="/src/assets/img/certificaciones/Asistente_de_docencia_en_Matemática_UTP_pag.jpg" />
-                    <CertificationItem date="Enero 2023" title="Certificado de Diseño UX/UI" img="/src/assets/img/certificaciones/Diseño_UX_UI.png" />
-                    <CertificationItem date="Setiembre 2022" title="Certificado de Javascript" img="/src/assets/img/certificaciones/Javascript.png" />
-                    <CertificationItem date="Mayo 2022" title="Certificado de Desarrollo Web" img="/src/assets/img/certificaciones/Desarrollo_Web.png" />
-                    <CertificationItem date="Marzo 2022" title="Certificado de Diseño Web Adaptable" img="/src/assets/img/certificaciones/Diseño_Web_Adaptable_freecodecamp.png" />
-                    <CertificationItem date="Julio 2007" title="Certificado de Cabinas de Internet" img="/src/assets/img/certificaciones/5.Cabinas_de_Internet(Redes)_CESCA.jpeg" />
-                    <CertificationItem date="Julio 2007" title="Certificado de Diagnóstico de Redes" img="/src/assets/img/certificaciones/1.Diagnostico_y_Reparación_PC_CESCA.jpeg" />
-                    <CertificationItem date="Junio 2007" title="Certificado de Mantenimiento de PC" img="/src/assets/img/certificaciones/2.Mantenimiento_de_PC_CESCA.jpeg" />
-                    <CertificationItem date="Junio 2007" title="Certificado de Línux Redhat" img="/src/assets/img/certificaciones/4.Linux_RedHat_CESCA.jpeg" />
-                    <CertificationItem date="Febrero 2007" title="Certificado de Ensamblaje de PC" img="/src/assets/img/certificaciones/6.Emsamblaje_de_Computadoras.jpeg" />
+                     <CertificationItem date="Octubre 2025" title="Certificado de React" img="/img/certificaciones/React.png" />
+                    <CertificationItem date="Setiembre 2025" title="Certificado de Angular" img="/img/certificaciones/Angular.png" />
+                    <CertificationItem date="Junio 2025" title="Certificado de Defensa de la Red" img="/img/certificaciones/network_defense.png" />
+                    <CertificationItem date="Abril 2025" title="Certificado de Introducción a la Ciberseguridad" img="/img/certificaciones/intruction_to_cibersecurity.png" />
+                    <CertificationItem date="Abril 2025" title="Certificado de Practicante de Design Thinking Empresarial" img="/img/certificaciones/enterprise_design_thinking_practitioner.png" />
+                    <CertificationItem date="Mayo 2025" title="Certificado de Cocreador del pensamiento de diseño empresarial" img="/img/certificaciones/enterprise_design_thinking_co_creator.png" />
+                    <CertificationItem date="Diciembre 2024" title="Certificado de CCNA: Introducción a las redes" img="/img/certificaciones/ccna_intruction_to_networks.png" />
+                    <CertificationItem date="Octubre 2024" title="Certificado de MySQL" img="/img/certificaciones/MySQL.png" />
+                    <CertificationItem date="Abril 2024" title="Certificado de Asistente de docencia" img="/img/certificaciones/Asistente_de_docencia_en_Matemática_UTP_pag.jpg" />
+                    <CertificationItem date="Enero 2023" title="Certificado de Diseño UX/UI" img="/img/certificaciones/Diseño_UX_UI.png" />
+                    <CertificationItem date="Setiembre 2022" title="Certificado de Javascript" img="/img/certificaciones/Javascript.png" />
+                    <CertificationItem date="Mayo 2022" title="Certificado de Desarrollo Web" img="/img/certificaciones/Desarrollo_Web.png" />
+                    <CertificationItem date="Marzo 2022" title="Certificado de Diseño Web Adaptable" img="/img/certificaciones/Diseño_Web_Adaptable_freecodecamp.png" />
+                    <CertificationItem date="Julio 2007" title="Certificado de Cabinas de Internet" img="/img/certificaciones/5.Cabinas_de_Internet(Redes)_CESCA.jpeg" />
+                    <CertificationItem date="Julio 2007" title="Certificado de Diagnóstico de Redes" img="/img/certificaciones/1.Diagnostico_y_Reparación_PC_CESCA.jpeg" />
+                    <CertificationItem date="Junio 2007" title="Certificado de Mantenimiento de PC" img="/img/certificaciones/2.Mantenimiento_de_PC_CESCA.jpeg" />
+                    <CertificationItem date="Junio 2007" title="Certificado de Línux Redhat" img="/img/certificaciones/4.Linux_RedHat_CESCA.jpeg" />
+                    <CertificationItem date="Febrero 2007" title="Certificado de Ensamblaje de PC" img="/img/certificaciones/6.Emsamblaje_de_Computadoras.jpeg" />
                   </div>
                 </div>
               </div>
