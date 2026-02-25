@@ -75,7 +75,7 @@
 /* ================ 
 REVISIÓN DE VISIBILIDAD DE MENÚ
 ================ */
-@media(min-width: 768px) {
+@media(min-width: 1025px) {
     .header .hamburger-btn {
         display: none;
     }
@@ -84,7 +84,7 @@ REVISIÓN DE VISIBILIDAD DE MENÚ
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1024px) {
     .header .nav-desktop {
         display: none;
     }
