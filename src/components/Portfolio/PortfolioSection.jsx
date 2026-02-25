@@ -268,7 +268,7 @@ const PortfolioSection = () => {
   const openProject = (project) => {
     setSelectedProject(project);
     setCurrentScreenshotIndex(0);
-    setShowDetails(false);
+    setShowDetails(true); // Open details by default
     document.body.classList.add('stop-scrolling');
   };
 
@@ -350,62 +350,60 @@ const PortfolioSection = () => {
       {/* Popup */}
       {selectedProject && (
         <div className="portfolio-popup open pp">
-          <div className="pp-details" style={{ maxHeight: showDetails ? (detailsRef.current?.scrollHeight + 'px') : '0px', opacity: showDetails ? 1 : 0 }} ref={detailsRef}>
-            <div className="pp-details-inner">
-              <div className="pp-title">
-                <h2>{selectedProject.title}</h2>
-                <p>Categoría - <span className="pp-project-category">{selectedProject.category.split('-').join(' ')}</span></p>
-              </div>
-              <div className="pp-project-details">
-                <div className="row">
-                  <div className="description">
-                    <h3>Resumen del proyecto</h3>
-                    <p>{selectedProject.description}</p>
-                  </div>
-                  <div className="info">
-                    <h3>información del proyecto</h3>
-                    <ul>
-                      <li>Fecha - <span>{selectedProject.date}</span></li>
-                      <li>Cliente - <span>{selectedProject.client}</span></li>
-                      <li>Herramientas - <span>{selectedProject.tools}</span></li>
-                      <li>Web - <span>
-                        <a href={selectedProject.link === '#' ? undefined : selectedProject.link} target="_blank" rel="noreferrer">
-                          {selectedProject.link === '#' ? 'No disponible' : 'Ver sitio web'}
-                        </a>
-                      </span></li>
-                    </ul>
-                  </div>
+          <div className="pp-details-inner">
+            <div className="pp-close-btn outer-shadow hover-in-shadow" onClick={closeProject}>&times;</div>
+            
+            <div className="pp-title">
+              <h2>{selectedProject.title}</h2>
+              <p>Categoría - <span className="pp-project-category">{selectedProject.category.split('-').join(' ')}</span></p>
+            </div>
+
+            {/* Collapsible Details */}
+            <div className="pp-project-details" style={{ maxHeight: showDetails ? '1000px' : '0px', opacity: showDetails ? 1 : 0, overflow: 'hidden', transition: 'all 0.5s ease' }}>
+              <div className="row">
+                <div className="description">
+                  <h3>Resumen del proyecto</h3>
+                  <p>{selectedProject.description}</p>
+                </div>
+                <div className="info">
+                  <h3>información del proyecto</h3>
+                  <ul>
+                    <li>Fecha - <span>{selectedProject.date}</span></li>
+                    <li>Cliente - <span>{selectedProject.client}</span></li>
+                    <li>Herramientas - <span>{selectedProject.tools}</span></li>
+                    <li>Web - <span>
+                      <a href={selectedProject.link === '#' ? undefined : selectedProject.link} target="_blank" rel="noreferrer">
+                        {selectedProject.link === '#' ? 'No disponible' : 'Ver sitio web'}
+                      </a>
+                    </span></li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="separator"></div>
-
-          <div className="pp-main">
-            <div className="pp-main-inner">
+            {/* Navigation Controls and Image Integrated */}
+            <div className="pp-main-integrated">
               <div className="pp-project-details-btn outer-shadow hover-in-shadow" onClick={toggleDetails}>
-                {showDetails ? 'Cerrar detalles' : 'Detalles del proyecto'} <i className={`fas ${showDetails ? 'fa-minus' : 'fa-plus'}`}></i>
+                {showDetails ? 'Ver menos detalles' : 'Ver detalles del proyecto'} <i className={`fas ${showDetails ? 'fa-minus' : 'fa-plus'}`}></i>
               </div>
-              <div className="pp-close outer-shadow hover-in-shadow" onClick={closeProject}>&times;</div>
-              <img 
-                src={selectedProject.screenshots[currentScreenshotIndex]} 
-                alt="screenshot" 
-                className="pp-img outer-shadow" 
-              />
-              <div className="pp-counter">{currentScreenshotIndex + 1} of {selectedProject.screenshots.length}</div>
+              
+              <div className="pp-img-container">
+                <img 
+                  src={selectedProject.screenshots[currentScreenshotIndex]} 
+                  alt="screenshot" 
+                  className="pp-img outer-shadow" 
+                />
+                
+                {selectedProject.screenshots.length > 1 && (
+                  <div className="pp-nav-controls">
+                    <div className="pp-prev" onClick={prevScreenshot}><i className="fas fa-play"></i></div>
+                    <div className="pp-counter">{currentScreenshotIndex + 1} of {selectedProject.screenshots.length}</div>
+                    <div className="pp-next" onClick={nextScreenshot}><i className="fas fa-play"></i></div>
+                  </div>
+                )}
+              </div>
             </div>
-            
-            <div className="pp-loader" style={{ display: 'none' }}>
-              <div></div>
-            </div>
-            
-            {selectedProject.screenshots.length > 1 && (
-              <>
-                <div className="pp-prev" onClick={prevScreenshot}><i className="fas fa-play" style={{ transform: 'rotate(180deg)', lineHeight: '40px' }}></i></div>
-                <div className="pp-next" onClick={nextScreenshot}><i className="fas fa-play" style={{ lineHeight: '40px' }}></i></div>
-              </>
-            )}
+
           </div>
         </div>
       )}
