@@ -1562,7 +1562,13 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   height: 40px;
   line-height: 40px;
   transition: all 0.3s ease;
-  margin: 15px auto 20px;
+  margin: 15px auto 25px;
+  background-color: var(--bg-black-50);
+  box-shadow: var(--outer-shadow);
+}
+
+.portfolio-popup .pp-project-details-btn:hover {
+  box-shadow: var(--inner-shadow);
 }
 
 .portfolio-popup .pp-project-details-btn i {
@@ -2112,52 +2118,7 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   justify-content: center;
 }
 
-.portfolio-popup .pp-inner {
-  padding: 70px 0 50px;
-  position: relative;
-  width: 100%;
-}
 
-.portfolio-popup .pp-project-details-btn {
-  position: absolute;
-  left: 0;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--skin-color);
-  top: 15px;
-  cursor: pointer;
-  padding: 0 15px;
-  height: 40px;
-  line-height: 40px;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.portfolio-popup .pp-close {
-  position: absolute;
-  right: 0;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  top: 15px;
-  text-align: center;
-  line-height: 35px;
-  font-size: 35px;
-  color: var(--text-black-600);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.portfolio-popup .pp-counter {
-  position: absolute;
-  right: 0;
-  height: 40px;
-  line-height: 40px;
-  bottom: 5px;
-  font-size: 16px;
-  color: var(--text-black-600);
-}
 
 .portfolio-popup .pp-prev,
 .portfolio-popup .pp-next {
