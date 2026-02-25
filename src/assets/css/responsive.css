@@ -97,6 +97,9 @@ REVISIÓN DE VISIBILIDAD DE MENÚ
         width: 145px;
         height: auto;
     }
+    .portfolio-popup .pp-main {
+        padding: 70px 0 40px;
+    }
     .section-title {
         padding-top: 60px;
     }

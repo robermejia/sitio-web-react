@@ -1481,7 +1481,8 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
 }
 
 .portfolio-popup .pp-main {
-  min-height: 100vh;
+  min-height: auto;
+  padding: 100px 0 50px;
   max-width: 1350px;
   width: 85%;
   margin: auto;
@@ -1491,8 +1492,11 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
 }
 
 .portfolio-popup .pp-main-inner {
-  padding: 70px 0 50px;
+  padding: 0;
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-popup .pp-project-details-btn {
