@@ -1579,6 +1579,15 @@ VENTANA EMERGENTE DE PORTAFOLIO (popup)
   border-radius: 30px;
 }
 
+@media(min-width: 1025px) {
+  .portfolio-popup .pp-main-integrated {
+    text-align: left;
+  }
+  .portfolio-popup .pp-project-details-btn {
+    margin: 15px 15px 25px;
+  }
+}
+
 /* ================ 
 SECCIÓN DE TESTIMONIO
 ================ */
