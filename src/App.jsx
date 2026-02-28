@@ -5,6 +5,7 @@ import ServicesSection from './components/Services/ServicesSection';
 import PortfolioSection from './components/Portfolio/PortfolioSection';
 import ContactSection from './components/Contact/ContactSection';
 import StyleSwitcher from './components/StyleSwitcher/StyleSwitcher';
+import bgMusic from './assets/audio/Daddy_del_Código.mp3';
 
 function App() {
   const [activeSection, setActiveSection] = useState('inicio');
@@ -129,7 +130,7 @@ function App() {
 
       {/* AUDIO */}
       <audio id="bg-music" loop>
-        <source src="/audio/El_Campeón_del_Código.mp3" type="audio/mpeg" />
+        <source src={bgMusic} type="audio/mpeg" />
       </audio>
     </div>
   );
