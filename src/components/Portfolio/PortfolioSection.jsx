@@ -10,7 +10,7 @@ const PortfolioSection = () => {
 
   const portfolioItems = [
     {
-      category: 'java react',
+      category: 'angular java',
       title: 'UTP Store',
       thumb: '/img/portfolio/thumb/project-16.png',
       screenshots: [
@@ -30,7 +30,7 @@ const PortfolioSection = () => {
       description: 'Tienda virtual desarrollada como tarea para la universidad UTP.',
       date: '2026',
       client: 'UTP',
-      tools: 'Java, Spring Boot, Render, Firebase, React',
+      tools: 'Java, Spring Boot, Render, Firebase, Angular',
       link: 'https://utptechnology-frontend.onrender.com'
     },
     {
