@@ -10,6 +10,30 @@ const PortfolioSection = () => {
 
   const portfolioItems = [
     {
+      category: 'java react',
+      title: 'UTP Store',
+      thumb: '/img/portfolio/thumb/project-16.png',
+      screenshots: [
+        '/img/portfolio/large/project-25/1.png',
+        '/img/portfolio/large/project-25/2.png',
+        '/img/portfolio/large/project-25/3.png',
+        '/img/portfolio/large/project-25/4.png',
+        '/img/portfolio/large/project-25/5.png',
+        '/img/portfolio/large/project-25/6.png',
+        '/img/portfolio/large/project-25/7.png',
+        '/img/portfolio/large/project-25/8.png',
+        '/img/portfolio/large/project-25/9.png',
+        '/img/portfolio/large/project-25/10.png',
+        '/img/portfolio/large/project-25/11.png',
+        '/img/portfolio/large/project-25/12.png'
+      ],
+      description: 'Tienda virtual desarrollada como tarea para la universidad UTP.',
+      date: '2026',
+      client: 'UTP',
+      tools: 'Java, Spring Boot, Render, Firebase, React',
+      link: 'https://utptechnology-frontend.onrender.com'
+    },
+    {
       category: 'react',
       title: 'Mi Sitio Web - React Version',
       thumb: '/img/portfolio/thumb/project-15.png',
@@ -221,7 +245,7 @@ const PortfolioSection = () => {
     },
     {
       category: 'ilustracion',
-      title: 'Ilustración DBS (Goku & Vegeta)',
+      title: 'Ilustración DBS (Goku y Bills)',
       thumb: '/img/portfolio/thumb/project-6.jpg',
       screenshots: [
         '/img/portfolio/large/project-6/1.png',
