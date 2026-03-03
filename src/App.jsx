@@ -8,16 +8,32 @@ import StyleSwitcher from './components/StyleSwitcher/StyleSwitcher';
 import bgMusic from './assets/audio/Daddy_del_Código.mp3';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('inicio');
+  const [activeSection, setActiveSection] = useState(window.location.hash.replace('#', '') || 'inicio');
   const [loading, setLoading] = useState(true);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '') || 'inicio';
+      setActiveSection(hash);
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Set initial section based on hash if present
+    if (window.location.hash) {
+      handleHashChange();
+    }
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1500);
-    return () => clearTimeout(timer);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      clearTimeout(timer);
+    };
   }, []);
 
   const toggleNav = () => {
@@ -31,7 +47,7 @@ function App() {
   };
 
   const handleNavClick = (sectionId) => {
-    setActiveSection(sectionId);
+    window.location.hash = sectionId;
     setIsNavOpen(false);
     document.body.classList.remove('hidden-scrolling');
   };
