@@ -10,6 +10,40 @@ const PortfolioSection = () => {
 
   const portfolioItems = [
     {
+      category: 'react',
+      title: 'Terapia TCC',
+      thumb: '/img/portfolio/thumb/project-17.png',
+      screenshots: [
+        '/img/portfolio/large/project-26/1.png',
+        '/img/portfolio/large/project-26/2.png',
+        '/img/portfolio/large/project-26/3.png',
+        '/img/portfolio/large/project-26/4.png',
+        '/img/portfolio/large/project-26/5.png',
+        '/img/portfolio/large/project-26/6.png',
+        '/img/portfolio/large/project-26/7.png',
+        '/img/portfolio/large/project-26/8.png',
+        '/img/portfolio/large/project-26/9.png',
+        '/img/portfolio/large/project-26/10.png',
+        '/img/portfolio/large/project-26/11.png',
+        '/img/portfolio/large/project-26/12.png',
+        '/img/portfolio/large/project-26/13.png',
+        '/img/portfolio/large/project-26/14.png',
+        '/img/portfolio/large/project-26/15.png',
+        '/img/portfolio/large/project-26/16.png',
+        '/img/portfolio/large/project-26/17.png',
+        '/img/portfolio/large/project-26/18.png',
+        '/img/portfolio/large/project-26/19.png',
+        '/img/portfolio/large/project-26/20.png',
+        '/img/portfolio/large/project-26/21.png',
+        '/img/portfolio/large/project-26/22.png'
+      ],
+      description: 'Plataforma profesional de psicología cognitivo-conductual que permite la gestión de terapias, recursos y seguimiento de pacientes, integrando Firebase para el manejo de datos en tiempo real.',
+      date: '2026',
+      client: 'Terapia TCC',
+      tools: 'React JS, Render, Firebase',
+      link: 'https://terapia-tcc.onrender.com/'
+    },
+    {
       category: 'angular java',
       title: 'UTP Store',
       thumb: '/img/portfolio/thumb/project-16.png',
